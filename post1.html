@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facial Recognition</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/ecom1.webp">
+		</div>
+
+        <h3>Facial Recognition using 68 landmarks</h3>
+
+        <p>This was a project did for Smart India Hackathon 2022
+            <br>
+            <br>
+            So here we propose a facial landmark points detection through   Dlib's 68 Model
+        
+            <br>
+            <br>
+            There are mostly two steps to detect face landmarks in an image -
+            1)Face detection: Face detection is the first methods which locate a human face and return a value in x,y,w,h which is a rectangle.
+            2)Face landmark: After getting the location of a face in an image, then we have to through points inside of that rectangle.
+            There are many methods of face detector but we focus in this post only one which is Dlib's method. Like, Opencv uses methods LBP cascades and HAAR and Dlib's use methods HOG (Histogram of Oriented Gradients) and SVM (Support Vector Machine).
+
+
+            <br>
+            <br>
+            Dlib has already a pre-built model which can detect the face, we are just accessing directly that model and creating an objec
+            <br>
+            <br>
+            After getting the face position from the image, we return the rectangle value where face resides. And on that rectangle is called detection of face.</p>
+
+
+            <h5>Software Specification:</h5>
+            <ul>
+                <li>Python</li>
+                <li>Anaconda Jupyter Notebook</li>
+
+             <h5>Libraries Used:</h5>
+                <ul>
+                    <li>Dlib</li>
+                    <li>numpy</li>
+                    <li>imageio</li>
+                    <li>cv2</li>
+                    <li>PIL</li>
+
+            
+		<h5>Facial landmark point through Dlib's 68 model</h5>
+		<div class="img-container">
+			<img src="images/lab-dash1.jpg.png">
+		</div>
+
+        <h5>Real time face detected</h5>
+		<div class="img-container">
+			<img src="images/facedete.jpg">
+		</div>
+
+

@@ -1,0 +1,41 @@
+:root{
+	--mainColor:#550975;
+	--secondaryColor:#270f33;
+
+	--borderColor:#edc9fa;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(29, 21, 32, 0.8);
+	--previewShadow:#2b202f;
+
+
+	--buttonColor:#8534a3;
+
+
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 300%; /* Full width */
+  background-color: rgb(247, 244, 260); /* Grey background */
+}
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 2px; /* Add top padding */
+  padding-bottom: 2px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.lua {width: 85%; background-color: #1164fd;} /* Dark Grey */
